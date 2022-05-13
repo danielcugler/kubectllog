@@ -1,8 +1,3 @@
-/***
- * When using the Winston logger library to print logs in Kubernetes pods it can be hard to read it since it converts the log to JSON format and also adds lots of extra information to that.
- * In order to make the log clearer and easier to read, this script reads the output from 'kubectl log', parses the JSONs received and prints only the 'timestamp' and 'message' attributes to the console.
- */
-
 import {spawn} from "child_process";
 
 var inquirer = require('inquirer');
