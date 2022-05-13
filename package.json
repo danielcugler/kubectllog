@@ -1,0 +1,12 @@
+{
+  "name": "kubectllog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:danielcugler/kubectllog.git",
+  "author": "Daniel Cugler <danielcugler@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^17.0.33",
+    "typescript": "^4.6.4"
+  }
+}
