@@ -82,7 +82,7 @@ export class Main {
 					try {
 						const jsonLogParagraphAsObject = JSON.parse(paragraph);
 
-						console.log(`${jsonLogParagraphAsObject.timestamp} ${jsonLogParagraphAsObject.message}`);
+						this.printJSONPropertiesInTheLog(jsonLogParagraphAsObject)
 					} catch (e) {
 					}
 
@@ -90,5 +90,9 @@ export class Main {
 				}
 			}
 		});
+	}
+
+	printJSONPropertiesInTheLog(jsonLogParagraphAsObject: any) {
+		console.log(`${jsonLogParagraphAsObject.timestamp} ${jsonLogParagraphAsObject.message}`);
 	}
 }

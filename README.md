@@ -23,6 +23,11 @@ system `Ubuntu 20.04.4 LTS`
 When running the application, it will show you a list of kubernetes pods. Choose one using the up and down keyboard
 keys, hit enter, and then the log will be shown.
 
+### Choosing the properties that are printed in log
+
+The current JSON properties being printed in the log are `message` and `timestamp`. If you want to change them, just
+update the `src/index.ts/printJSONPropertiesInTheLog()` function.
+
 ### Improvements
 
 - Check if the message being printed is a JSON. If so, format it accordingly before printing in the log
